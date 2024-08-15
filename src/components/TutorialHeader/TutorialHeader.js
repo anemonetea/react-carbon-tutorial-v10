@@ -11,7 +11,6 @@ import {
   SkipToContent,
   SideNav,
   SideNavItems,
-  HeaderSideNavItems,
   SideNavLink,
 } from 'carbon-components-react';
 import {
@@ -53,9 +52,6 @@ const TutorialHeader = () => (
             <SideNavLink renderIcon={Fade16} element={Link} to="/repos">
               Repositories
             </SideNavLink>
-            {/* <HeaderSideNavItems>
-                            <HeaderMenuItem element={Link} to="/repos">Repositories</HeaderMenuItem>
-                        </HeaderSideNavItems> */}
           </SideNavItems>
         </SideNav>
         <HeaderGlobalBar>
