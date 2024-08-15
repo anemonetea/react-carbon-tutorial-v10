@@ -1654,6 +1654,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@carbon/grid@npm:10.17.0":
+  version: 10.17.0
+  resolution: "@carbon/grid@npm:10.17.0"
+  dependencies:
+    "@carbon/import-once": ^10.4.0
+    "@carbon/layout": ^10.15.0
+  checksum: b5502b7ccfdc1e99d1c5ad782e9662a052f097d16dd80b1e70b59a93f958247e437a6e69f8e786d5013adc9949934490690b07a9fb2d8dd7e87089a445571276
+  languageName: node
+  linkType: hard
+
 "@carbon/icon-helpers@npm:^10.10.0, @carbon/icon-helpers@npm:^10.28.4":
   version: 10.50.0
   resolution: "@carbon/icon-helpers@npm:10.50.0"
@@ -1685,6 +1695,24 @@ __metadata:
   peerDependencies:
     react: ">=16"
   checksum: 431864456f50757dea9a965d1c05dd51ce9cd514b0d874f0db8842e056d2b0c6a46e63ae32370d711a03181bb66a4c5561652634ea31f4763a5f1044861224bf
+  languageName: node
+  linkType: hard
+
+"@carbon/import-once@npm:^10.4.0":
+  version: 10.7.2
+  resolution: "@carbon/import-once@npm:10.7.2"
+  dependencies:
+    "@ibm/telemetry-js": ^1.5.0
+  checksum: fb440b9a43f0bfe2a75ada4576aae9a45be1b02d4ddde360cb806d95147e0f33d729b0ad56377365aefc5e4f751f2cec2ae10765c33fba089b1f447f0718ed65
+  languageName: node
+  linkType: hard
+
+"@carbon/layout@npm:^10.15.0":
+  version: 10.37.4
+  resolution: "@carbon/layout@npm:10.37.4"
+  dependencies:
+    "@ibm/telemetry-js": ^1.5.0
+  checksum: f4c418d47e564eb0341d70ccc486b32d5173d4a82ba62b4efd657ddb613b74026ab7c92313a16c9c6e52720ef1d99a05d12aaf4f883cfdde57548d6e076c8c5e
   languageName: node
   linkType: hard
 
@@ -4854,6 +4882,7 @@ __metadata:
   resolution: "carbon-tutorial@workspace:."
   dependencies:
     "@babel/plugin-proposal-private-property-in-object": ^7.21.11
+    "@carbon/grid": 10.17.0
     "@carbon/icons-react": 10.22.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
