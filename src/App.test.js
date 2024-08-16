@@ -1,14 +1,25 @@
 import React from 'react';
 import App from './App';
-import { shallow } from 'enzyme';
+import { HashRouter as Router } from 'react-router-dom';
+
+import { render, screen } from '@testing-library/react';
 
 describe('React Step 1 Tests', () => {
   it('renders without crashing', () => {
-    shallow(<App />);
+    render(
+      <Router>
+        <App />
+      </Router>
+    );
   });
 
-  const wrapper = shallow(<App />);
   it('contains a TutorialHeader', () => {
-    expect(wrapper.find('TutorialHeader').length).toBe(1);
+    render(
+      <Router>
+        <App />
+      </Router>
+    );
+    const header = screen.getByRole('banner', { name: 'Carbon Tutorial' });
+    expect(header).toBeInTheDocument();
   });
 });
