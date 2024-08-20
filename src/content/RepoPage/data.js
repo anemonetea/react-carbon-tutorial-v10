@@ -25,32 +25,18 @@ export const headers = [
   },
 ];
 
-export const rows = [
-  {
-    id: '1',
-    name: 'Repo 1',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '2',
-    name: 'Repo 2',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '3',
-    name: 'Repo 3',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-];
+export const rows = (function() {
+  const rowsArr = [];
+  for (let i = 0; i < 12; i++) {
+    rowsArr.push({
+      id: `${i}`,
+      name: `Repo ${i}`,
+      createdAt: 'Date',
+      updatedAt: 'Date',
+      issueCount: '123',
+      stars: '456',
+      links: 'Links',
+    });
+  }
+  return rowsArr;
+})();
