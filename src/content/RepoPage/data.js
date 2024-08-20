@@ -36,6 +36,7 @@ export const rows = (function() {
       issueCount: '123',
       stars: '456',
       links: 'Links',
+      description: 'Description',
     });
   }
   return rowsArr;

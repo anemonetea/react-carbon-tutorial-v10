@@ -60,7 +60,9 @@ const RepoTable = ({ rows, headers, totalItemsCount }) => {
                       ))}
                     </TableExpandRow>
                     <TableExpandedRow colSpan={headers.length + 1}>
-                      <p>{getRowDescription(row.id)}</p>
+                      <p className="row-expanded-text">
+                        {getRowDescription(row.id)}
+                      </p>
                     </TableExpandedRow>
                   </React.Fragment>
                 ))}
