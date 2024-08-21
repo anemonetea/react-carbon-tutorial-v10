@@ -4993,7 +4993,6 @@ __metadata:
     react-router-dom: 5.0.0
     react-scripts: 5.0.0
     sass: 1.29.0
-    wait-for-expect: 3.0.2
   languageName: unknown
   linkType: soft
 
@@ -15944,13 +15943,6 @@ resolve@^2.0.0-next.5:
   dependencies:
     xml-name-validator: ^3.0.0
   checksum: 2327c8a6c7302ed4b685125c193f4b4b859ee12cd6e1938407a02dda9cfcfff7f0c103de387b268444c4b61d7892d5260b5c684eb7519886fb3a07798bd565ba
-  languageName: node
-  linkType: hard
-
-"wait-for-expect@npm:3.0.2":
-  version: 3.0.2
-  resolution: "wait-for-expect@npm:3.0.2"
-  checksum: 487de701ccb29f9edc2fb2d77b3212c29266266156cd13f51b34556faa1061151f078b7200763c684553fcd67823084cd5f871a965d2b6cce97e3b9224b63bdb
   languageName: node
   linkType: hard
 
