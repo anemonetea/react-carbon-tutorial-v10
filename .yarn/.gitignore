@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 704e96f (chore(update): update step 1 with updated dependencies (#6447))
 # https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
 build-state.yml
 install-state.gz
