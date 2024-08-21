@@ -2,7 +2,7 @@ import React from 'react';
 import RepoTable from './RepoTable';
 import { headers, rows } from './data';
 import { useQuery, gql } from '@apollo/client';
-import { DataTableSkeleton } from 'carbon-components-react';
+import { DataTableSkeleton, InlineNotification } from 'carbon-components-react';
 import { getRowItems } from './helper';
 
 const REPO_QUERY = gql`
@@ -53,9 +53,14 @@ const RepoPage = () => {
     );
   }
   if (error) {
-    //content = <p>Error : {error.message}</p>;
     content = (
       <>
+        <InlineNotification
+          title="Error fetching repositories from GitHub."
+          subtitle={error.message}
+          kind="error"
+          lowContrast
+        />
         <RepoTable headers={headers} rows={rows} />
       </>
     );
